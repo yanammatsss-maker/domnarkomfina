@@ -1,0 +1,90 @@
+@import 'reset.css';
+@import 'layout.css';
+
+body {
+    background-color: rgb(228, 213, 167);
+    line-height: 1.5;
+    margin: 20px 0;
+    padding: 0 50px;
+}
+
+.headOne {
+    font-family: sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 24px;
+    padding-top: 80px;
+    padding-bottom: 28px;
+}
+
+.headTwo {
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 19px;
+    padding-top: 64px;
+    padding-left: 90px;
+    padding-bottom: 28px
+}
+
+.headThree {
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 19px;
+    padding-top: 64px;
+    padding-left: 90px;
+    padding-bottom: 28px
+}
+
+.firstText {
+    font-family: sans-serif;
+        font-size: 11px;
+        font-weight: bold;
+        line-height: 23px;
+        padding-top: 28px;
+        padding-left: 90px;
+        padding-bottom: 52px
+}
+
+.mainText{
+        font-family: sans-serif;
+            font-size: 11px;
+            line-height: 23px;
+            padding-top: 52px;
+            padding-left: 90px;
+            padding-bottom: 56px
+}
+.fatText{
+    font-family: sans-serif;
+        font-size: 11px;
+        font-weight: bold;
+        line-height: 23px;
+        padding-top: 56px;
+        padding-left: 90px;
+        padding-bottom: 28px
+}
+
+.listStyle{
+    list-style: outside;
+    font-family: sans-serif;
+        font-size: 11px;
+        line-height: 23px;
+        padding-top: 56px;
+        padding-left: 106px;
+        padding-bottom: 28px
+}
+.headerStyle{
+    padding-left: 90px;
+}
+
+.quoteStyle {
+    background-color: #c4b87e;
+    border-left: 3px solid #958450;
+    margin-left: 90px;
+    padding: 15px 30px;
+    padding-left: 17px;
+    font-family: sans-serif;
+}
+
+

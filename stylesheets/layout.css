@@ -89,12 +89,15 @@
     padding-left: 17px;
     font-family: sans-serif;
 } */
+/* общие стили для страницы */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
-    font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 
 h1,
@@ -106,8 +109,8 @@ ol,
 ul,
 blockquote,
 hr {
-    width: 700px;
-    margin: 0 auto;
+  width: 700px;
+  margin: 0 auto;
 }
 
 h1,
@@ -115,95 +118,224 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: "PT Sans Caption", sans-serif;
-    font-weight: bold;
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: bold;
 }
 
 p,
 blockquote,
 ol,
 ul {
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 30px;
 }
 
 img {
-    width: 1024px;
-    margin: 0 auto;
-    display: block;
+  width: 1024px;
+  margin: 0 auto;
+  display: block;
 }
 
-h1+p{
-  color: rgba(0, 0, 0, 0.4);  
+h1 + p {
+  color: rgba(0, 0, 0, 0.4);
   font-size: 22px;
 }
-a{
-    color: inherit;
+a {
+  color: inherit;
 }
 
-h1{
-    margin: 50px auto;
-    font-size: 38px;
-    line-height: 44px;
+h1 {
+  margin: 50px auto;
+  font-size: 38px;
+  line-height: 44px;
 }
-h2{
-    margin-top: 40px;
-    font-size: 32px;
-    line-height: 36px;
+h2 {
+  margin-top: 40px;
+  font-size: 32px;
+  line-height: 36px;
 }
-h3{
-    margin-top: 36px;
-    font-size: 28px;
-    line-height: 32px;
+h3 {
+  margin-top: 36px;
+  font-size: 28px;
+  line-height: 32px;
 }
-h4{
-margin-top: 32px;
-    font-size: 24px;
-    line-height: 28px;
+h4 {
+  margin-top: 32px;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 h5 {
-    margin-top: 28px;
-    font-size: 22px;
-    line-height: 24px;
+  margin-top: 28px;
+  font-size: 22px;
+  line-height: 24px;
 }
 
-hr{
-    width: 1024px;
-    margin: 20px auto;
+hr {
+  width: 1024px;
+  margin: 20px auto;
 }
 
-h2+p,
-h3+p,
-h4+p,
-h5+p{
-    margin-top: 10px;
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p {
+  margin-top: 10px;
 }
 
-ul{
-    list-style-type: disc;
-    padding-left: 30px;
+ul {
+  list-style-type: disc;
+  padding-left: 30px;
 }
 
 ol {
-    list-style-type: decimal;
-    padding-left: 30px;
+  list-style-type: decimal;
+  padding-left: 30px;
 }
 li {
-    margin: 8px;
+  margin: 8px;
 }
-.quoteStyle{
-    font-style: italic;
-        position: relative;
+.quoteStyle {
+  font-style: italic;
+  position: relative;
 }
 .quoteStyle::before {
-    content: ''; 
-    width: 3px;
-    height: 100%;
-    background-color: black;
-    position: absolute;
-    top:0;
-    left:-17px; 
+  content: "";
+  width: 3px;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: -17px;
 }
 
+/* стили для бокового меню */
+.sidebar {
+  width: 300px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  margin-top: 50px;
+  opacity: 0.3;
+  transition: all ease 0.3s;
+}
+.sidebar:hover {
+  opacity: 1;
+  transition: all ease 0.6s;
+}
+.sidebar ol {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  font-size: 15px;
+}
+.sidebar ol ol {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.sidebar li {
+  line-height: 100%;
+}
+
+.sidebar a {
+  text-decoration: none;
+}
+
+/* стили для верхнего меню */
+.menubar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.menubar img {
+  width: 350px;
+  margin: 0;
+  align-items: center;
+}
+.menubar a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+}
+.menubar a:hover {
+  color: black;
+  transition: all ease 0.6s;
+}
+
+/* стили для about.html */
+
+/* .about::before {
+  content: "";
+  width: 1440px;
+  height: 3120px;
+  position: absolute;
+  top: 0;
+  left: calc(50%-720px);
+  background-image: url("../images/1440.png");
+  opacity: 0.2;
+} */
+.about{
+    overflow-x: hidden;
+}
+
+.about section {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.about section div {
+  width: 48%;
+  overflow: hidden;
+}
+.about h2 {
+  font-weight: 400;
+  width: 100%;
+  font-size: 38px;
+  line-height: 46px;
+  margin: 0;
+}
+.about p {
+  width: 100%;
+  font-size: 26px;
+  line-height: 36px;
+  margin: 26px 0;
+}
+.about div:nth-of-type(2) img {
+  width: 1100px;
+}
+#firstSection {
+  margin-top: 138px;
+}
+
+#thirdSection div {
+  margin-top: 90px;
+}
+
+#firstSection div:nth-of-type(1) {
+  padding: 40px 0 0 168px;
+}
+
+#secondSection {
+  margin-top: 90px;
+}
+
+#secondSection div:nth-of-type(2) {
+  padding: 60px 60px 0 10px;
+}
+
+#thirdSection div:nth-of-type(2) {
+  padding: 10px 0 0 168px;
+}
+#thirdSection img {
+  border-left: 1px solid #eee;
+}
+
+#thirdSection {
+  border-bottom: 1px solid #eee;
+}
